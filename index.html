@@ -98,7 +98,6 @@ section{padding:80px 0}
 .prob-desc{font-size:13px;color:var(--text-secondary);line-height:1.7}
 
 /* CRONOGRAMA */
-#cronograma{background:var(--navy)}
 .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 .phase{background:var(--navy-card);border:1px solid var(--border);padding:24px;position:relative}
 .phase.active{border-color:rgba(255,210,0,.3);background:rgba(255,210,0,.03)}
@@ -199,9 +198,6 @@ section{padding:80px 0}
 }
 .ag-alert-title{font-size:13px;font-weight:700;color:#F87171;margin-bottom:8px}
 .ag-alert-desc{font-size:12px;color:var(--text-secondary);line-height:1.6}
-
-/* MULESOFT */
-#hipoteses{background:var(--navy)}
 
 /* FOOTER */
 footer{
@@ -331,13 +327,10 @@ footer{
   <a class="nav-brand" href="#">Vibra Energia</a>
   <ul class="nav-links">
     <li><a href="#motivadores">Motivadores</a></li>
-    <li><a href="#cronograma">Cronograma</a></li>
-    <li><a href="#arquitetura">Arquitetura</a></li>
-    
-    <li><a href="#framework">Framework</a></li>
+    <li><a href="#framework">Estratégia</a></li>
+    <li><a href="#bus">BUs</a></li>
     <li><a href="#mkt-cloud">Marketing</a></li>
-    <li><a href="#agentforce">Agentforce</a></li>
-    <li><a href="#hipoteses">MuleSoft · Rev Cloud</a></li>
+        <li><a href="#arquitetura">Arquitetura</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:10px">
     <div class="nav-pill"><div class="pulse"></div>Em Execução · Set/26</div>
@@ -348,13 +341,10 @@ footer{
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#motivadores" onclick="closeMenu()">Motivadores</a></li>
-      <li><a href="#cronograma" onclick="closeMenu()">Cronograma</a></li>
-      <li><a href="#arquitetura" onclick="closeMenu()">Arquitetura</a></li>
-      
-      <li><a href="#framework" onclick="closeMenu()">Framework</a></li>
+      <li><a href="#framework" onclick="closeMenu()">Estratégia</a></li>
+      <li><a href="#bus" onclick="closeMenu()">BUs</a></li>
       <li><a href="#mkt-cloud" onclick="closeMenu()">Marketing</a></li>
-      <li><a href="#agentforce" onclick="closeMenu()">Agentforce</a></li>
-      <li><a href="#hipoteses" onclick="closeMenu()">MuleSoft · Rev Cloud</a></li>
+            <li><a href="#arquitetura" onclick="closeMenu()">Arquitetura</a></li>
     </ul>
   </div>
 </nav>
@@ -368,7 +358,6 @@ footer{
     <div class="hero-stats">
       <div class="hero-stat"><div class="val g">3</div><div class="lbl">Orgs Salesforce</div></div>
       <div class="hero-stat"><div class="val">6</div><div class="lbl">Unidades de Negócio</div></div>
-      <div class="hero-stat"><div class="val gr">5</div><div class="lbl">Cases Agentforce</div></div>
       <div class="hero-stat"><div class="val g">Jul/27</div><div class="lbl">Go Live</div></div>
     </div>
   </div>
@@ -377,253 +366,64 @@ footer{
 <!-- MOTIVADORES -->
 <section id="motivadores">
   <div class="container fade-in">
-    <div class="sec-label">01 — Por que agora</div>
-    <h2 class="sec-title">Motivadores do Programa</h2>
+    <div class="sec-label">01 — A Oportunidade</div>
+    <h2 class="sec-title">Por que este momento é estratégico</h2>
     <div class="divider"></div>
+
+    <!-- Intro executiva -->
+    <div style="max-width:780px;margin-bottom:56px">
+      <p style="font-size:17px;line-height:1.8;color:var(--text-secondary);margin-bottom:20px">
+        A Vibra vive um momento de transformação — e a tecnologia precisa acompanhar essa ambição. O Projeto Phoenix não é apenas uma atualização de plataforma: é uma revisão profunda de como cada unidade de negócio opera, se relaciona com seus clientes e extrai valor dos dados.
+      </p>
+      <p style="font-size:17px;line-height:1.8;color:var(--text-secondary);margin-bottom:20px">
+        A estratégia parte de dois movimentos simultâneos: <strong style="color:var(--text)">modernizar o ambiente Salesforce</strong> — consolidando três orgs fragmentadas em uma arquitetura integrada — e <strong style="color:var(--text)">revisar os processos internos e as jornadas dos stakeholders</strong>, garantindo que a tecnologia ative o potencial máximo de cada BU.
+      </p>
+      <p style="font-size:17px;line-height:1.8;color:var(--text-secondary)">
+        O resultado esperado é um parque tecnológico mais eficiente e inovador, que entrega melhor experiência para o colaborador, para os revendedores, para os clientes B2B e para os membros do programa de fidelidade — com IA e automação como alavancas reais de escala.
+      </p>
+    </div>
+
+    <!-- 3 pilares -->
     <div class="prob-grid">
       <div class="prob-card">
         <div class="prob-num">01</div>
-        <div class="prob-title">Baixa Adoção &amp; Qualidade de Dados</div>
-        <div class="prob-desc">CRM subutilizado pelos times comerciais. Dados fragmentados entre orgs impedem visão consolidada do posto e decisões precisas.</div>
+        <div class="prob-title">Eficiência Operacional</div>
+        <div class="prob-desc">Consolidar processos fragmentados, eliminar retrabalho e reduzir débito técnico — liberando os times para focar em resultado, não em manutenção.</div>
       </div>
       <div class="prob-card">
         <div class="prob-num">02</div>
-        <div class="prob-title">Custo Crescente &amp; Complexidade</div>
-        <div class="prob-desc">Três ambientes Salesforce operando em silos. Integrações frágeis, manutenção cara e roadmap travado por débito técnico acumulado.</div>
+        <div class="prob-title">Experiência dos Stakeholders</div>
+        <div class="prob-desc">Jornadas redesenhadas para revendedores, clientes B2B, distribuidores e membros Premmia — com personalização e agilidade que a plataforma atual não consegue entregar.</div>
       </div>
       <div class="prob-card">
         <div class="prob-num">03</div>
-        <div class="prob-title">Bloqueio para IA &amp; Automação</div>
-        <div class="prob-desc">Sem Data 360 consolidado, Agentforce e Marketing Agents ficam inoperantes. A IA da Salesforce exige dados unificados como pré-requisito.</div>
+        <div class="prob-title">Plataforma para IA & Escala</div>
+        <div class="prob-desc">Com dados unificados e processos governados, Agentforce e Marketing Agents deixam de ser promessa e passam a ser alavanca real de crescimento para cada BU.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CRONOGRAMA -->
-<section id="cronograma">
-  <div class="container fade-in">
-    <div class="sec-label">02 — Roadmap</div>
-    <h2 class="sec-title">Cronograma — 4 Fases</h2>
-    <div class="divider"></div>
-    <div class="timeline">
-      <div class="phase active">
-        <div class="phase-num">Fase 0</div>
-        <div class="phase-title">Discovery &amp; Alinhamento</div>
-        <div class="phase-date">Ago → Set/2026</div>
-        <ul class="phase-items">
-          <li>Mapeamento de processos por BU</li>
-          <li>Definição da arquitetura Multi-Org</li>
-          <li>Kick-off Agentforce Cases 1 e 2</li>
-          <li>Setup inicial da nova org</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="phase-num">Fase 1</div>
-        <div class="phase-title">Fundação Técnica</div>
-        <div class="phase-date">Out → Dez/2026</div>
-        <ul class="phase-items">
-          <li>Data 360 CRM Connector operacional</li>
-          <li>Agentforce Cases 1–3 em produção</li>
-          <li>Marketing Cloud Next: Acelera+</li>
-          <li>Integrações SAP e sistemas core</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="phase-num">Fase 2</div>
-        <div class="phase-title">Expansão &amp; IA</div>
-        <div class="phase-date">Jan → Abr/2027</div>
-        <ul class="phase-items">
-          <li>Data 360 consolidado — Insights &amp; Scoring</li>
-          <li>Agentforce Cases 4–5</li>
-          <li>Marketing Agents desbloqueados</li>
-          <li>Revenue Cloud piloto B2B</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="phase-num">Fase 3</div>
-        <div class="phase-title">Go Live &amp; Escala</div>
-        <div class="phase-date">Mai → Jul/2027</div>
-        <ul class="phase-items">
-          <li>Migração Org Legacy completa</li>
-          <li>MuleSoft malha consolidada</li>
-          <li>Todas as BUs em produção</li>
-          <li>Adoção &gt; 80% na plataforma</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ARQUITETURA MULTI-ORG -->
-<section id="arquitetura">
-  <div class="container fade-in">
-    <div class="sec-label">03 — Estrutura técnica</div>
-    <h2 class="sec-title">Estratégia Multi-Org Data 360</h2>
-    <div class="divider"></div>
-    <p class="sec-sub">Três orgs Salesforce conectadas via Data 360 CRM Connector — convergindo dados para habilitar IA, Agentforce e Marketing Agents.</p>
-
-    <!-- ECOSYSTEM DIAGRAM -->
-    <div style="background:var(--navy-card);border:1px solid var(--border);padding:32px 24px;margin-bottom:24px">
-
-      <div style="display:grid;grid-template-columns:160px 1fr 160px;gap:16px;align-items:start">
-
-        <!-- LEFT: Sistemas de entrada -->
-        <div style="display:flex;flex-direction:column;gap:0">
-          <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;text-align:center">Sistemas de Entrada</div>
-          <div style="display:flex;flex-direction:column;gap:4px">
-            <div class="sys-chip sys-in">ARP — Registro de Preços</div>
-            <div class="sys-chip sys-in">SAP — ERP</div>
-            <div class="sys-chip sys-in">Pricing (new)</div>
-            <div class="sys-chip sys-in">BW — Analytics SAP</div>
-            <div class="sys-chip sys-in">Org COMERC — SF Legada</div>
-            <div class="sys-chip sys-in">Org Premmia — Loyalty</div>
-            <div class="sys-chip sys-in">Canal de Negócios — Portal</div>
-          </div>
-          <div style="display:flex;align-items:center;justify-content:flex-end;margin-top:8px">
-            <div style="flex:1;height:1px;background:rgba(255,210,0,.2)"></div>
-            <span style="color:var(--gold);font-size:14px;margin-left:4px">→</span>
-          </div>
-        </div>
-
-        <!-- CENTER: Orgs -->
-        <div style="display:flex;flex-direction:column;gap:12px">
-
-          <!-- Org Principal + Org Legacy (side by side, connected) -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch">
-
-            <!-- Org Principal -->
-            <div style="background:var(--navy);border:2px solid var(--gold);padding:16px;position:relative">
-              <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Org Principal · Nova</div>
-              <div style="font-size:14px;font-weight:700;margin-bottom:12px">Varejo + B2B</div>
-              <div style="display:flex;flex-direction:column;gap:4px">
-                <div class="org-chip org-new">Sales Cloud</div>
-                <div class="org-chip org-new">Service Cloud</div>
-                <div class="org-chip org-new">Commerce Cloud</div>
-                <div class="org-chip org-new">Marketing Cloud Next</div>
-                <div class="org-chip org-d360">Data 360 (Home) ✦</div>
-                <div class="org-chip org-agent">Agentforce ✦</div>
-              </div>
-              <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Varejo · B2B · DD · CS · BR Mania · Lubrax</div>
-            </div>
-
-            <!-- Org Legacy -->
-            <div style="background:var(--navy);border:1px solid rgba(255,255,255,.12);padding:16px">
-              <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:6px">Org Legacy · Coexistência</div>
-              <div style="font-size:14px;font-weight:700;margin-bottom:12px">Org Legacy</div>
-              <div style="display:flex;flex-direction:column;gap:4px">
-                <div class="org-chip org-leg">Sales Cloud</div>
-                <div class="org-chip org-leg">Marketing Cloud Engagement</div>
-                <div class="org-chip org-d360-leg">Data 360 (Home)</div>
-              </div>
-              <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Varejo · B2B · DD · CS</div>
-            </div>
-          </div>
-
-          <!-- Connector between orgs -->
-          <div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;background:rgba(96,165,250,.07);border:1px dashed rgba(96,165,250,.3);font-size:11px;color:#60A5FA;letter-spacing:.02em">
-            ↕ &nbsp; Data 360 CRM Connector &nbsp; ↕
-          </div>
-
-          <!-- Org Premmia -->
-          <div style="background:var(--navy);border:1px solid rgba(0,156,64,.35);padding:16px">
-            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-light);margin-bottom:6px">Org Premmia · Preservada</div>
-            <div style="font-size:14px;font-weight:700;margin-bottom:12px">Org Premmia</div>
-            <div style="display:flex;gap:8px;flex-wrap:wrap">
-              <div class="org-chip org-prem">Agentforce</div>
-              <div class="org-chip org-prem">Loyalty Program</div>
-            </div>
-            <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Sem alterações para novas funcionalidades</div>
-          </div>
-
-        </div>
-
-        <!-- RIGHT: Sistemas de saída -->
-        <div style="display:flex;flex-direction:column;gap:0">
-          <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px;text-align:center">Sistemas de Saída</div>
-          <div style="display:flex;align-items:center;margin-bottom:8px">
-            <span style="color:var(--green-light);font-size:14px;margin-right:4px">→</span>
-            <div style="flex:1;height:1px;background:rgba(0,200,79,.2)"></div>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:4px">
-            <div class="sys-chip sys-out">Genesys — Voz / CTI</div>
-            <div class="sys-chip sys-out">Netico — Contratos</div>
-            <div class="sys-chip sys-out">DocuSign</div>
-            <div class="sys-chip sys-out">GCP</div>
-            <div class="sys-chip sys-out">Tableau — BI</div>
-            <div class="sys-chip sys-out">Power BI — BI</div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Ecosystem label -->
-      <div style="margin-top:20px;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary)">
-        Ecossistema Vibra — Sistemas Integrados à Plataforma Salesforce
-      </div>
-    </div>
-
-    <!-- Highlights -->
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-bottom:2px">
-      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid var(--gold);padding:20px 24px">
-        <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:6px">Centralização de Campanhas</div>
-        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Marketing Cloud Next na Org Principal unifica campanhas de Varejo, B2B e Premmia — visão consolidada de audiências e jornadas.</div>
-      </div>
-      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid var(--green-light);padding:20px 24px">
-        <div style="font-size:12px;font-weight:700;color:var(--green-light);margin-bottom:6px">Compartilhamento Premmia → Org Principal</div>
-        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Dados de fidelidade da Org Premmia sincronizados via Data 360 CRM Connector — enriquecendo o perfil unificado do posto na Org Principal.</div>
-      </div>
-      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid rgba(192,132,252,.6);padding:20px 24px">
-        <div style="font-size:12px;font-weight:700;color:#C084FC;margin-bottom:6px">Org Premmia — Sem Novas Funcionalidades</div>
-        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Org Premmia preservada integralmente. Nenhuma nova implementação nesta org — apenas leitura e compartilhamento de dados via conector.</div>
-      </div>
-      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid rgba(96,165,250,.6);padding:20px 24px">
-        <div style="font-size:12px;font-weight:700;color:#60A5FA;margin-bottom:6px">Preservação da Org Legacy</div>
-        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Histórico, configurações e dados da Org Legacy mantidos durante coexistência. Migração progressiva sem ruptura — zero perda de informação.</div>
-      </div>
-    </div>
-
-    <!-- Note BR Mania / Lubrax -->
-    <div style="font-size:11px;color:var(--text-secondary);padding:10px 16px;border-left:2px solid rgba(255,210,0,.3)">
-      * BR Mania e Lubrax: cadastro na Org Principal (Varejo) para fins de gestão unificada. Operação independente na plataforma exige implementação dedicada — processos imaturos e alta complexidade. Escopo fora do período atual.
-    </div>
-
-  </div>
-</section>
-
-ple">
  <!-- FRAMEWORK -->
 <section id="framework" style="background:var(--navy-mid)">
   <div class="container fade-in">
-    <div class="sec-label">04 — Governança &amp; Execução</div>
+    <div class="sec-label">02 — Priorização & Execução</div>
     <h2 class="sec-title">Por Onde Começar</h2>
     <div class="divider"></div>
-    <p class="sec-sub">Do fundamento à cereja do bolo — cada BU tem um ponto de partida diferente. O framework orienta prioridade, sequência e o que a Salesforce entrega em cada etapa.</p>
+    <p class="sec-sub">Cada BU tem um ponto de partida diferente. O framework orienta a sequência — do fundamento até as iniciativas de maior impacto.</p>
 
     <!-- Framework visual: fundamento → cereja -->
     <div style="margin-bottom:32px">
 
-      <!-- Layers -->
+      <!-- Layers: Fundamento → Cereja -->
       <div style="display:flex;flex-direction:column;gap:2px">
 
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--gold);padding:20px 28px;display:flex;align-items:center;gap:24px">
-          <div style="font-size:24px;flex-shrink:0">🍒</div>
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.2);padding:20px 28px;display:flex;align-items:center;gap:24px">
+          <div style="font-size:24px;flex-shrink:0">🏗️</div>
           <div style="flex:1">
-            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">Cereja do Bolo — Fase 2/3</div>
-            <div style="font-size:14px;font-weight:700;margin-bottom:4px">IA, Agentforce &amp; Marketing Agents</div>
-            <div style="font-size:12px;color:var(--text-secondary)">Agentes autônomos, recomendações em tempo real, campanhas geradas por IA, segmentação dinâmica. Só possível com Data 360 consolidado e adoção do CRM acima de 70%.</div>
-          </div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0">
-            <span class="insight-tag">DD</span><span class="insight-tag">Varejo</span><span class="insight-tag">B2B</span>
-          </div>
-        </div>
-
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--green-light);padding:20px 28px;display:flex;align-items:center;gap:24px">
-          <div style="font-size:24px;flex-shrink:0">📊</div>
-          <div style="flex:1">
-            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-light);margin-bottom:4px">Inteligência — Fase 1/2</div>
-            <div style="font-size:14px;font-weight:700;margin-bottom:4px">Data 360, Scoring &amp; Segmentação</div>
-            <div style="font-size:12px;color:var(--text-secondary)">Perfil unificado do posto, scores de propensão, segmentos dinâmicos para marketing. Requer dados limpos e integrações SAP operacionais como pré-requisito.</div>
+            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:4px">Fundamento — Fase 0/1</div>
+            <div style="font-size:14px;font-weight:700;margin-bottom:4px">Modelo de dados, integrações &amp; setup</div>
+            <div style="font-size:12px;color:var(--text-secondary)">Estrutura de objetos no Salesforce, integrações SAP, CRM Connector entre orgs, limpeza de dados. Sem fundamento sólido, as camadas superiores não sustentam.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0">
             <span class="insight-tag">Todas as BUs</span>
@@ -642,73 +442,43 @@ ple">
           </div>
         </div>
 
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid rgba(255,255,255,.2);padding:20px 28px;display:flex;align-items:center;gap:24px">
-          <div style="font-size:24px;flex-shrink:0">🏗️</div>
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--green-light);padding:20px 28px;display:flex;align-items:center;gap:24px">
+          <div style="font-size:24px;flex-shrink:0">📊</div>
           <div style="flex:1">
-            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:4px">Fundamento — Fase 0/1</div>
-            <div style="font-size:14px;font-weight:700;margin-bottom:4px">Modelo de dados, integrações &amp; setup</div>
-            <div style="font-size:12px;color:var(--text-secondary)">Estrutura de objetos no Salesforce, integrações SAP, CRM Connector entre orgs, limpeza de dados. Sem fundamento sólido, as camadas superiores não sustentam.</div>
+            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-light);margin-bottom:4px">Inteligência — Fase 1/2</div>
+            <div style="font-size:14px;font-weight:700;margin-bottom:4px">Data 360, Scoring &amp; Segmentação</div>
+            <div style="font-size:12px;color:var(--text-secondary)">Perfil unificado do posto, scores de propensão, segmentos dinâmicos para marketing. Requer dados limpos e integrações SAP operacionais como pré-requisito.</div>
           </div>
           <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0">
             <span class="insight-tag">Todas as BUs</span>
           </div>
         </div>
 
-      </div>
-    </div>
-
-    <!-- Por onde começar por BU -->
-    <div style="background:var(--navy-card);border:1px solid var(--border);padding:28px;margin-bottom:2px">
-      <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:20px">Ponto de Partida por BU</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px">
-
-        <!-- Varejo -->
-        <div style="padding:18px;background:var(--navy);border:1px solid var(--border)">
-          <div style="font-size:13px;font-weight:700;margin-bottom:10px">Varejo</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Base já existe — foco em consolidar adoção, evoluir carteirização e ativar Agentforce para o consultor de varejo.</div>
-          <div style="margin-top:10px;font-size:11px;color:var(--gold)">→ Evoluir para IA e personalização</div>
-        </div>
-
-        <!-- B2B -->
-        <div style="padding:18px;background:var(--navy);border:1px solid var(--border)">
-          <div style="font-size:13px;font-weight:700;margin-bottom:10px">B2B</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Definir segmentos, mapear contatos por conta e estruturar territórios. Alta complexidade exige disciplina de governança desde o início — sem isso, a plataforma não escala e os processos manuais não são eliminados.</div>
-          <div style="margin-top:10px;font-size:11px;color:var(--gold)">→ Começar pela governança</div>
-        </div>
-
-        <!-- DD -->
-        <div style="padding:18px;background:var(--navy);border:1px solid var(--border)">
-          <div style="font-size:13px;font-weight:700;margin-bottom:10px">DD</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Partir direto para Agentforce e Data 360 — base já existe. Foco: evoluir o canal de pedidos e implantar inteligência sobre o distribuidor.</div>
-          <div style="margin-top:10px;font-size:11px;color:var(--gold)">→ Começar pela cereja</div>
-        </div>
-
-        <!-- Premmia -->
-        <div style="padding:18px;background:var(--navy);border:1px solid var(--border)">
-          <div style="font-size:13px;font-weight:700;margin-bottom:10px">Premmia</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Não mexer na plataforma — conectar ao Data 360 e compartilhar dados com a Org Principal. O valor está nos dados de fidelidade, não na reconfiguração.</div>
-          <div style="margin-top:10px;font-size:11px;color:var(--gold)">→ Começar pelo conector</div>
-        </div>
-
-        <!-- CS -->
-        <div style="padding:18px;background:var(--navy);border:1px solid rgba(56,189,248,.2)">
-          <div style="font-size:13px;font-weight:700;margin-bottom:10px;color:var(--sky)">Customer Service</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Consolidar omnicanalidade com Genesys, estruturar roteamento inteligente B2B/B2C e ativar Agentforce para atendimento autônomo de alta frequência.</div>
-          <div style="margin-top:10px;font-size:11px;color:var(--sky)">→ Começar pelo roteamento OmniChannel</div>
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--gold);padding:20px 28px;display:flex;align-items:center;gap:24px">
+          <div style="font-size:24px;flex-shrink:0">🍒</div>
+          <div style="flex:1">
+            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px">Cereja do Bolo — Fase 2/3</div>
+            <div style="font-size:14px;font-weight:700;margin-bottom:4px">IA, Agentforce &amp; Marketing Agents</div>
+            <div style="font-size:12px;color:var(--text-secondary)">Agentes autônomos, recomendações em tempo real, campanhas geradas por IA, segmentação dinâmica. Só possível com Data 360 consolidado e adoção do CRM acima de 70%.</div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0">
+            <span class="insight-tag">DD</span><span class="insight-tag">Varejo</span><span class="insight-tag">B2B</span>
+          </div>
         </div>
 
       </div>
     </div>
+
 
 
   </div>
 </section>
 
 <section id="bus" style="padding:80px 0">
-  <div class="section-header fade-in">
-    <div class="section-tag">Unidades de Negócio</div>
-    <h2 class="section-title">Estratégia por BU — Framework e por onde começar</h2>
-    <p class="section-desc">Clique em cada BU para expandir a estratégia completa — insight, como a Salesforce ajuda e o framework do fundamento até a cereja do bolo.</p>
+  <div class="container fade-in">
+    <div class="sec-label">Unidades de Negócio</div>
+    <h2 class="sec-title">Estratégia por Unidade de Negócio</h2>
+    <p class="sec-sub">Diagnóstico, posicionamento e sequência de ação para cada unidade de negócio. Clique para expandir.</p>
   </div>
 
   <div class="bu-list fade-in">
@@ -833,16 +603,16 @@ ple">
       </div>
       <div class="bu-body">
         <div class="tags">
-          <span class="tag tg">Maturidade Alta</span><span class="tag tb">APIs Mapeadas</span><span class="tag tr">Riscos Críticos</span><span class="tag tg2">Case 1 em Testes</span>
+          <span class="tag tg">Maturidade Alta</span><span class="tag tb">APIs Mapeadas</span><span class="tag tg2">Commerce + Service</span><span class="tag tg2">Case 1 em Testes</span>
         </div>
         <div class="bu-cols">
           <div class="bu-col">
-            <div class="bu-col-label gold">⚠️ Riscos Críticos na Transição</div>
-            <div class="bu-risk-box"><strong style="color:#F87171;display:block;margin-bottom:6px">Integrações em risco:</strong>APIs de precificação (ARP), integração SAP para pedidos spot/diretos, e negociação via WhatsApp (Case 2). Simulação de preço depende de NTT como owner. Risco: perda de rastreabilidade de pedidos durante coexistência das orgs.</div>
+            <div class="bu-col-label gold">⚠️ Pontos de Atenção na Transição</div>
+            <div class="bu-risk-box"><strong style="color:#FBBF24;display:block;margin-bottom:6px">Governança de processo é pré-requisito:</strong>Agentes e automações replicam o fluxo existente — regras de corredores de preço, etapas de pedido e integrações (ARP, SAP) precisam estar documentadas antes da implantação. Mudanças de processo após o go-live impactam diretamente o comportamento dos agentes.</div>
           </div>
           <div class="bu-col">
             <div class="bu-col-label blue">☁️ Como a Salesforce Ajuda</div>
-            <div class="bu-sf-box">Sales Cloud para gestão de pedidos e negociação; Agentforce Case 1 (DD Ofertas — em testes), Case 3 (DD Arquivos — Release Ago); MuleSoft para orquestrar APIs críticas (ARP, SAP) durante a transição de orgs — substituindo o Middleware AWS atual.</div>
+            <div class="bu-sf-box"><strong style="color:#60A5FA;display:block;margin-bottom:5px">Jornada de ponta a ponta:</strong>Data 360 segmenta clientes e personaliza a oferta → Marketing Cloud dispara pelo canal preferido (WhatsApp) → cliente finaliza no canal ou é direcionado ao Commerce, com vitrine 1:1 → Agentforce conduz desde a negociação de preço até o agendamento da entrega.<br><br>Base: <strong style="color:#60A5FA">Commerce Cloud + Service Cloud</strong> como plataforma operacional da DD.</div>
           </div>
           <div class="bu-col">
             <div class="bu-col-label green">🗺️ Framework — Fundamento → Cereja</div>
@@ -1092,7 +862,7 @@ ple">
 <!-- MARKETING CLOUD NEXT -->
 <section id="mkt-cloud">
   <div class="container fade-in">
-    <div class="sec-label">06 — Marketing Cloud Next</div>
+    <div class="sec-label">03 — Marketing</div>
     <h2 class="sec-title">Estratégia de Marketing</h2>
     <div class="divider"></div>
     <p class="sec-sub">Marketing Cloud Next desbloqueado pelo Data 360. Agents de IA, segmentação unificada e advertising nativo.</p>
@@ -1135,159 +905,238 @@ ple">
       </div>
     </div>
 
-    <!-- Próximos Passos Acordados -->
+
+    <!-- Plano de Execução D360 -->
     <div style="margin-top:40px">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
-        <span style="font-size:18px">✅</span>
-        <h3 style="font-size:18px;font-weight:700;color:var(--gold);margin:0">Próximos Passos Acordados</h3>
+        <h3 style="font-size:18px;font-weight:700;color:var(--text);margin:0">Plano de Execução — Por onde começar</h3>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">Vibra → Salesforce</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Compartilhar visão de maturidade (estratégica e ferramentas) por cluster — consumidor final, revenda, B2B, Lubrax</div>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">Salesforce → Vibra</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Desenhar arquitetura de dados por persona/papel para cluster B2B — benchmarks Vale, Gerdau, BR Aviation</div>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">Diagnóstico Premmia</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Causa raiz do churn (mídia paga fraudulenta vs. churn genuíno) antes de escalar campanhas de reativação</div>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">Créditos Data 360</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Projetar consumo de créditos para funcionalidades até fim do ano (painel WhatsApp, orquestração de dados)</div>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid var(--border);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px">WhatsApp — Prioridades</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Daniella alinha internamente quais testes priorizar: Flows, pagamento, catálogo, carrossel</div>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid rgba(255,210,0,.35);border-radius:10px;padding:20px">
-          <div style="font-size:13px;font-weight:700;color:var(--gold);margin-bottom:6px">Governança Proativa</div>
-          <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Salesforce se compromete a sinalizar riscos, gaps de arquitetura e limitações antes que apareçam como surpresa — pedido explícito da Daniella</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- AGENTFORCE -->
-<section id="agentforce">
-  <div class="container fade-in">
-    <div class="sec-label">07 — IA em Produção</div>
-    <h2 class="sec-title">Agentforce — Calendário</h2>
-    <div class="divider"></div>
-    <p class="sec-sub">Cinco cases em implementação. Janela de atuação Salesforce: Set → Dez/2026. Cases 4–5 dependem de Data 360 consolidado.</p>
-
-    <div class="ag-calendar">
-
-      <div class="ag-case">
-        <div class="ag-case-header status-uat">
-          <div class="ag-case-num">Case 1</div>
-          <div class="ag-case-title">DD — Oferta Inteligente</div>
-          <span class="ag-case-status st-uat">UAT</span>
-          <div class="ag-case-date">Set → Out/26</div>
-        </div>
-        <div class="ag-case-body">
-          Agente recomenda produtos e ofertas para distribuidores com base no histórico de compras e scores D360. Em fase de User Acceptance Testing — validação com time DD em andamento.
+      <!-- Fase 1 -->
+      <div style="margin-bottom:12px">
+        <div style="display:flex;align-items:center;gap:12px;background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--green-light);padding:16px 24px;margin-bottom:2px">
+          <div style="min-width:90px">
+            <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-light);font-weight:700">Fase 1</div>
+            <div style="font-size:12px;color:var(--text-secondary);margin-top:2px">Imediato</div>
+          </div>
+          <div style="flex:1">
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px">WhatsApp UCP — Configuração dos números</div>
+            <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Habilitar novas funcionalidades (Flows) nos números cadastrados. Parceiro Cadastra como responsável.</div>
+          </div>
+          <div style="flex-shrink:0">
+            <span style="background:rgba(0,200,79,.1);color:var(--green-light);border:1px solid rgba(0,200,79,.2);font-size:11px;padding:4px 10px;font-weight:600">Quick Win: canal ativo para campanhas imediatas</span>
+          </div>
         </div>
       </div>
 
-      <div class="ag-case">
-        <div class="ag-case-header status-refinamento">
-          <div class="ag-case-num">Case 2</div>
-          <div class="ag-case-title">Customer Service — Atendimento Autônomo</div>
-          <span class="ag-case-status st-refinamento">Refinamento</span>
-          <div class="ag-case-date">Out → Nov/26</div>
-        </div>
-        <div class="ag-case-body">
-          Agente autônomo para resolução de dúvidas e ocorrências frequentes no Service Cloud. Em refinamento dos fluxos de escalonamento e integração com Knowledge Base.
-        </div>
-      </div>
-
-      <div class="ag-case">
-        <div class="ag-case-header status-planejamento">
-          <div class="ag-case-num">Case 3</div>
-          <div class="ag-case-title">Varejo — Consultor Virtual</div>
-          <span class="ag-case-status st-planejamento">Planejamento</span>
-          <div class="ag-case-date">Nov → Dez/26</div>
-        </div>
-        <div class="ag-case-body">
-          Agente de suporte ao consultor de varejo: preparação para visita ao posto, resumo do histórico, próximas ações sugeridas. Limite de entrega dentro da janela SF: Dez/2026.
-        </div>
-      </div>
-
-      <div class="ag-case">
-        <div class="ag-case-header status-hipotese">
-          <div class="ag-case-num">Case 4</div>
-          <div class="ag-case-title">Lubrax — Cross-sell Agente</div>
-          <span class="ag-case-status st-hipotese">Pós Data 360</span>
-          <div class="ag-case-date">Jan → Fev/27</div>
-        </div>
-        <div class="ag-case-body">
-          Agente identifica postos com alto score de propensão Lubrax e dispara ações personalizadas. Dependência: Calculated Insights do Data 360 operacional.
+      <!-- Fase 2 -->
+      <div style="margin-bottom:12px">
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--gold);padding:16px 24px;margin-bottom:2px">
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="min-width:90px">
+              <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700">Fase 2</div>
+              <div style="font-size:12px;color:var(--text-secondary);margin-top:2px">Out/26 — SWAP</div>
+            </div>
+            <div style="flex:1">
+              <div style="font-size:13px;font-weight:700;margin-bottom:8px">Setup Inicial D360 + Casos de Uso MCE</div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">Caso de Uso 1 — Segmentações para Revenda / Premmia / Ads</span><br>
+                  1 fonte de ingestão Premmia + 1 fonte MCE. Responsabilidade: Vibra.
+                </div>
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">Caso de Uso 2 — Agentforce DD (POC em uso)</span><br>
+                  Integração com fluxo de ofertas da Distribuidora Digital. Responsabilidade: BRQ.
+                </div>
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">ID Resolution</span><br>
+                  Responsabilidade: Professional Services.
+                </div>
+              </div>
+            </div>
+            <div style="flex-shrink:0">
+              <span style="background:rgba(255,210,0,.1);color:var(--gold);border:1px solid rgba(255,210,0,.2);font-size:11px;padding:4px 10px;font-weight:600">Quick Win: primeiras segmentações ativas e POC DD em produção</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="ag-case">
-        <div class="ag-case-header status-hipotese">
-          <div class="ag-case-num">Case 5</div>
-          <div class="ag-case-title">Premmia — Reativação de Fidelidade</div>
-          <span class="ag-case-status st-hipotese">Pós Data 360</span>
-          <div class="ag-case-date">Mar → Abr/27</div>
-        </div>
-        <div class="ag-case-body">
-          Agente reativa postos com baixo engajamento no programa de fidelidade. Usa perfil unificado D360 para personalizar abordagem e identificar melhor canal de contato.
+      <!-- Fase 3 -->
+      <div>
+        <div style="background:var(--navy-card);border:1px solid var(--border);border-left:4px solid var(--sky);padding:16px 24px;margin-bottom:2px">
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="min-width:90px">
+              <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sky);font-weight:700">Fase 3</div>
+              <div style="font-size:12px;color:var(--text-secondary);margin-top:2px">Jan/27</div>
+            </div>
+            <div style="flex:1">
+              <div style="font-size:13px;font-weight:700;margin-bottom:8px">Escala e IA — Renovação do contrato (D360 + RCS)</div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">Configuração RCS</span><br>
+                  Canal enriquecido para campanhas de alta conversão. Responsabilidade: PS + Cadastra.
+                </div>
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">GCP — Zero Copy (validar dados do Lake)</span><br>
+                  Ingestão sem duplicação a partir de Janeiro. Responsabilidade: Docek + Mari Meira.
+                </div>
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">
+                  <span style="color:var(--text);font-weight:600">Agentforce Marketing</span><br>
+                  Agents de marketing autônomos desbloqueados com D360 consolidado. Responsabilidade: Cadastra.
+                </div>
+              </div>
+            </div>
+            <div style="flex-shrink:0">
+              <span style="background:rgba(56,189,248,.1);color:var(--sky);border:1px solid rgba(56,189,248,.2);font-size:11px;padding:4px 10px;font-weight:600">Quick Win: IA de marketing operacional e canais enriquecidos ativos</span>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-
-    <div class="ag-alert">
-      <div class="ag-alert-title">⚠ Atenção: Janela de Atuação Salesforce</div>
-      <div class="ag-alert-desc">
-        A Salesforce confirmou disponibilidade de equipe especializada em Agentforce até <strong style="color:var(--text)">Dezembro de 2026</strong>. Cases 1–3 precisam ser concluídos dentro desta janela. Cases 4–5 serão retomados em Jan/27 com time interno e dependem do Data 360 consolidado.
-      </div>
     </div>
   </div>
 </section>
 
 <!-- MULESOFT & REVENUE CLOUD -->
-<section id="hipoteses">
+
+
+<!-- ARQUITETURA MULTI-ORG -->
+<section id="arquitetura">
   <div class="container fade-in">
-    <div class="sec-label">08 — Hipóteses Estratégicas</div>
-    <h2 class="sec-title">MuleSoft &amp; Revenue Cloud</h2>
+    <div class="sec-label">04 — Arquitetura Técnica</div>
+    <h2 class="sec-title">Estratégia Multi-Org & Data 360</h2>
     <div class="divider"></div>
-    <p class="sec-sub">A malha nervosa da transição e o motor comercial nativo — hipóteses que potencializam todas as BUs e consolidam a plataforma.</p>
-    <div class="cards-grid two">
-      <div class="card">
-        <div class="card-icon">🔌</div>
-        <div class="card-title">MuleSoft — Malha de Integração</div>
-        <div class="card-desc">Substituição das integrações ponto-a-ponto por uma malha centralizada. SAP, sistemas legados e fontes externas conectados via APIs gerenciadas. Redução de custo de manutenção e agilidade para novas integrações.</div>
-        <span class="card-tag tag-blue">Infraestrutura</span>
+    <p class="sec-sub">A fundação técnica que viabiliza tudo o que foi descrito: três orgs conectadas via Data 360 CRM Connector, com papéis e fronteiras bem definidos.</p>
+
+    <!-- ECOSYSTEM DIAGRAM -->
+    <div style="background:var(--navy-card);border:1px solid var(--border);padding:32px 24px;margin-bottom:24px">
+
+      <div style="display:grid;grid-template-columns:160px 1fr 160px;gap:16px;align-items:start">
+
+        <!-- LEFT: Sistemas de entrada -->
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;text-align:center">Sistemas de Entrada</div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div class="sys-chip sys-in">ARP — Registro de Preços</div>
+            <div class="sys-chip sys-in">SAP — ERP</div>
+            <div class="sys-chip sys-in">Pricing (new)</div>
+            <div class="sys-chip sys-in">BW — Analytics SAP</div>
+            <div class="sys-chip sys-in">Org COMERC — SF Legada</div>
+            <div class="sys-chip sys-in">Org Premmia — Loyalty</div>
+            <div class="sys-chip sys-in">Canal de Negócios — Portal</div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:flex-end;margin-top:8px">
+            <div style="flex:1;height:1px;background:rgba(255,210,0,.2)"></div>
+            <span style="color:var(--gold);font-size:14px;margin-left:4px">→</span>
+          </div>
+        </div>
+
+        <!-- CENTER: Orgs -->
+        <div style="display:flex;flex-direction:column;gap:12px">
+
+          <!-- Org Principal + Org Legacy (side by side, connected) -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch">
+
+            <!-- Org Principal -->
+            <div style="background:var(--navy);border:2px solid var(--gold);padding:16px;position:relative">
+              <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Org Principal · Nova</div>
+              <div style="font-size:14px;font-weight:700;margin-bottom:12px">Varejo + B2B</div>
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <div class="org-chip org-new">Sales Cloud</div>
+                <div class="org-chip org-new">Service Cloud</div>
+                <div class="org-chip org-new">Commerce Cloud</div>
+                <div class="org-chip org-new">Marketing Cloud Next</div>
+                <div class="org-chip org-d360">Data 360 (Home) ✦</div>
+                <div class="org-chip org-agent">Agentforce ✦</div>
+              </div>
+              <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Varejo · B2B · DD · CS · BR Mania · Lubrax</div>
+            </div>
+
+            <!-- Org Legacy -->
+            <div style="background:var(--navy);border:1px solid rgba(255,255,255,.12);padding:16px">
+              <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:6px">Org Legacy · Coexistência</div>
+              <div style="font-size:14px;font-weight:700;margin-bottom:12px">Org Legacy</div>
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <div class="org-chip org-leg">Sales Cloud</div>
+                <div class="org-chip org-leg">Marketing Cloud Engagement</div>
+                <div class="org-chip org-d360-leg">Data 360 (Home)</div>
+              </div>
+              <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Varejo · B2B · DD · CS</div>
+            </div>
+          </div>
+
+          <!-- Connector between orgs -->
+          <div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;background:rgba(96,165,250,.07);border:1px dashed rgba(96,165,250,.3);font-size:11px;color:#60A5FA;letter-spacing:.02em">
+            ↕ &nbsp; Data 360 CRM Connector &nbsp; ↕
+          </div>
+
+          <!-- Org Premmia -->
+          <div style="background:var(--navy);border:1px solid rgba(0,156,64,.35);padding:16px">
+            <div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-light);margin-bottom:6px">Org Premmia · Preservada</div>
+            <div style="font-size:14px;font-weight:700;margin-bottom:12px">Org Premmia</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <div class="org-chip org-prem">Agentforce</div>
+              <div class="org-chip org-prem">Loyalty Program</div>
+            </div>
+            <div style="margin-top:10px;font-size:10px;color:var(--text-secondary)">Sem alterações para novas funcionalidades</div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Sistemas de saída -->
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px;text-align:center">Sistemas de Saída</div>
+          <div style="display:flex;align-items:center;margin-bottom:8px">
+            <span style="color:var(--green-light);font-size:14px;margin-right:4px">→</span>
+            <div style="flex:1;height:1px;background:rgba(0,200,79,.2)"></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div class="sys-chip sys-out">Genesys — Voz / CTI</div>
+            <div class="sys-chip sys-out">Netico — Contratos</div>
+            <div class="sys-chip sys-out">DocuSign</div>
+            <div class="sys-chip sys-out">GCP</div>
+            <div class="sys-chip sys-out">Tableau — BI</div>
+            <div class="sys-chip sys-out">Power BI — BI</div>
+          </div>
+        </div>
+
       </div>
-      <div class="card">
-        <div class="card-icon">💼</div>
-        <div class="card-title">Revenue Cloud — Motor Comercial</div>
-        <div class="card-desc">CPQ nativo no Salesforce para contratos, precificação e renovações B2B. Elimina planilhas de proposta, acelera ciclo de venda e conecta pipeline ao faturamento em tempo real.</div>
-        <span class="card-tag tag-gold">B2B</span>
-      </div>
-      <div class="card">
-        <div class="card-icon">📋</div>
-        <div class="card-title">Gestão de Contratos Unificada</div>
-        <div class="card-desc">Contratos de fornecimento, distribuidores e franqueados centralizados no Revenue Cloud. Visibilidade de vencimentos, renovações e desvios de performance em um único lugar.</div>
-        <span class="card-tag tag-gold">Eficiência</span>
-      </div>
-      <div class="card">
-        <div class="card-icon">📈</div>
-        <div class="card-title">Pipeline para Receita em Tempo Real</div>
-        <div class="card-desc">Forecast de receita alimentado por dados reais do CRM e integração SAP. Gestão executiva com visibilidade de pipeline → contrato → faturamento sem gaps de informação.</div>
-        <span class="card-tag tag-green">Executivo</span>
+
+      <!-- Ecosystem label -->
+      <div style="margin-top:20px;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary)">
+        Ecossistema Vibra — Sistemas Integrados à Plataforma Salesforce
       </div>
     </div>
+
+    <!-- Highlights -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-bottom:2px">
+      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid var(--gold);padding:20px 24px">
+        <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:6px">Centralização de Campanhas</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Marketing Cloud Next na Org Principal unifica campanhas de Varejo, B2B e Premmia — visão consolidada de audiências e jornadas.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid var(--green-light);padding:20px 24px">
+        <div style="font-size:12px;font-weight:700;color:var(--green-light);margin-bottom:6px">Compartilhamento Premmia → Org Principal</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Dados de fidelidade da Org Premmia sincronizados via Data 360 CRM Connector — enriquecendo o perfil unificado do posto na Org Principal.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid rgba(192,132,252,.6);padding:20px 24px">
+        <div style="font-size:12px;font-weight:700;color:#C084FC;margin-bottom:6px">Org Premmia — Sem Novas Funcionalidades</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Org Premmia preservada integralmente. Nenhuma nova implementação nesta org — apenas leitura e compartilhamento de dados via conector.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid var(--border);border-left:3px solid rgba(96,165,250,.6);padding:20px 24px">
+        <div style="font-size:12px;font-weight:700;color:#60A5FA;margin-bottom:6px">Preservação da Org Legacy</div>
+        <div style="font-size:12px;color:var(--text-secondary);line-height:1.6">Histórico, configurações e dados da Org Legacy mantidos durante coexistência. Migração progressiva sem ruptura — zero perda de informação.</div>
+      </div>
+    </div>
+
+    <!-- Note BR Mania / Lubrax -->
+    <div style="font-size:11px;color:var(--text-secondary);padding:10px 16px;border-left:2px solid rgba(255,210,0,.3)">
+      * BR Mania e Lubrax: cadastro na Org Principal (Varejo) para fins de gestão unificada. Operação independente na plataforma exige implementação dedicada — processos imaturos e alta complexidade. Escopo fora do período atual.
+    </div>
+
   </div>
 </section>
 
+ple">
 <!-- FOOTER -->
 <footer>
   <a class="nav-brand" href="#" style="font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--text);opacity:.5">VIBRA <span style="color:var(--gold)">ENERGIA</span></a>
